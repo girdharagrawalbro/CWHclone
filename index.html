@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4161772639454424"
+     crossorigin="anonymous"></script>
+    <title>Learn to code online - CodeWithGirdhar</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        color: white;
+        font-family: Poppins, sans-serif !important;
+    }
+    ul {
+        list-style: none;
+    }
+    a {
+        text-decoration: none;
+    }
+    .flex {
+        display: flex;
+    }
+    .wrap {
+        flex-wrap: wrap;
+    }
+    .a-cen {
+        align-items: center;
+    }
+    .j-bet {
+        justify-content: space-between;
+    }
+    .bg-v {
+        background-color: rgba(31, 41, 55, 1);
+    }
+    .col-v {
+        color: rgba(216, 180, 254, 1);
+    }
+    .a-aro {
+        justify-content: space-around;
+    }
+    .btn {
+        padding: .5rem .75rem;
+        cursor: pointer;
+        border: none;
+        border-radius: .5rem;
+    }
+    .btn-2 {
+        padding: .75rem 1rem;
+        cursor: pointer;
+        border: none;
+        border-radius: .4rem;
+        background-color: white;
+        color: black;
+        font-weight: 600;
+        font-size: .75rem;
+    }
+    .btn-3 {
+        padding: .75rem 1rem;
+        border: none;
+        margin: 1rem;
+        border-radius: 25px;
+    }
+    hr {
+        border: 0;
+        height: 1px;
+        background-color: #a1a1a1;
+    }
+    svg {
+        fill: white;
+    }
+    header {
+        top: 0;
+        position: sticky;
+    }
+    .log-btn {
+        background-color: rgb(168, 85, 247);
+        font-size: .875rem;
+        line-height: 1.25rem;
+        font-weight: 600;
+    }
+    .top-nav {
+        padding: 1.5rem 1rem;
+    }
+    .mid-nav {
+        padding: 1rem;
+    }
+    .menu-btn{
+        display: none;
+    }
+    .gap {
+        gap: 10px;
+    }
+    ul {
+        gap: 1.3rem;
+    }
+    ul li {
+        cursor: pointer;
+        font-weight: 500;
+        font-size: 18px;
+    }
+    header ul li:hover {
+        border-bottom: 2px solid rgba(168, 85, 247, 1);
+    }
+    .h-col {
+        color: rgb(147, 51, 234);
+    }
+    section {
+        background-color: rgb(17, 24, 39);
+    }
+    .section {
+        display: none;
+    }
+    .container {
+        width: 80%;
+        margin: auto;
+        height: 60vh;
+    }
+    .container .left,
+    .container .right {
+        width: 50%;
+    }
+    .container .left {
+        padding-right: 2rem;
+        margin: auto;
+    }
+    .container .left h1 {
+        font-size: 2.4rem;
+    }
+    .light {
+        color: rgb(156, 163, 175);
+        font-weight: 500;
+    }
+    .container .left p,
+    .c-2 p,
+    .c-3 p {
+        line-height: 1.5rem;
+        font-weight: 500;
+        font-size: 1rem;
+        color: rgb(156, 163, 175);
+    }
+    .container .right {
+        background: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80&quot;');
+        background-position: center;
+    }
+    .c-2,
+    .c-3 {
+        padding: 2rem 0;
+        height: 100%;
+    }
+    .c-2 h1,
+    .c-3 h1,
+    .c-4 h1 {
+        text-align: center;
+        font-size: 2rem;
+    }
+    .c-2 .box-contain,
+    .c-3 .box-contain {
+        gap: 35px;
+        margin-top: 20px;
+    }
+    .c-2 .box-contain .box {
+        background-color: rgb(50, 64, 86);
+        width: 340px;
+        border-radius: 1rem;
+        height: 80vh;
+    }
+    .c-2 .box-contain .box img {
+        width: 100%;
+        border-radius: 1rem 1rem 0 0;
+    }
+    .c-2 .box-contain .box .box-in {
+        padding: 1rem;
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    .c-3 .box-contain .box {
+        background-color: rgb(50, 64, 86);
+        width: 44%;
+        padding: 1.5rem;
+        border-radius: 1rem;
+    }
+    .c-3 .box-contain .box .box-in img {
+        width: 1.25rem;
+        height: auto;
+        margin-bottom: 1rem;
+    }
+    .c-3 .box-contain .box .box-in h4 {
+        margin-left: 1rem;
+    }
+    .c-3 p {
+        font-weight: 550;
+    }
+    .c-4 {
+        padding-top: 1rem;
+        text-align: center;
+    }
+    .c-4 .box-contain {
+        padding: 1.5rem;
+        flex-wrap: wrap;
+        gap: 3rem;
+        justify-content: space-around;
+    }
+    .c-4 .box-contain .box {
+        padding: 1rem;
+        width: 15rem;
+        background-color: rgb(50, 64, 86);
+        border-radius: 12px;
+        border: 1ps solid black;
+    }
+    .c-4 .box-contain .box img {
+        width: 8rem;
+    }
+    .mid-nav-sec {
+        /* position: fixed; */
+        height: 67.1vh;
+    }
+    .mid-nav-sec .sidenav {
+        width: 16vw;
+        background-color: rgb(50, 64, 86);
+        padding: 1rem 1.5rem;
+        letter-spacing: 1px;
+    }
+    .mid-nav-sec .sidenav .sub-links {
+        padding: 1rem;
+    }
+    .mid-nav-sec .sidenav .sub-links ul {
+        list-style: disc;
+    }
+    .mid-nav-sec .sidenav .sub-links ul li {
+        color: rgb(243 244 246);
+        font-weight: 600;
+        text-decoration: underline;
+    }
+    .mid-nav-sec .main {
+        padding: 1rem;
+        overflow-y: scroll;
+    }
+    ::-webkit-scrollbar {
+        width: 0;
+    }
+    .mid-nav-sec .main::-webkit-scrollbar {
+        width: 10px;
+        /* Vertical scrollbar width */
+        height: 10px;
+        /* Horizontal scrollbar height */
+    }
+    .mid-nav-sec .main::-webkit-scrollbar-track {
+        background-color: rgb(50, 64, 86);
+    }
+    .mid-nav-sec .main::-webkit-scrollbar-thumb {
+        background-color: rgb(243 244 246);
+        border-radius: 5px;
+        /* Rounded corners for the thumb */
+    }
+    .mid-nav-sec .main .content {
+        padding: 1rem 0;
+    }
+    .mid-nav-sec .main .content h1 {
+        color: rgb(243 244 246);
+        font-size: 2rem;
+        margin: 15px 0;
+    }
+    .mid-nav-sec .main .content ul {
+        padding-left: 3rem;
+    }
+    .mid-nav-sec .main .content p {
+        padding: 1rem;
+        letter-spacing: .5px;
+        line-height: 1.5rem;
+        color: rgb(243 244 246);
+        font-size: 18px;
+    }
+    .mid-nav-sec .main .content video,
+    .mid-nav-sec .main .content img {
+        width: 100%;
+    }
+    @media only screen and (max-width: 600px) {
+        body {
+            background-color: black;
+        }
+        .res {
+            display: none;
+        }
+        .logo h2 {
+            font-size: 20px;
+        }
+        .top-nav {
+        padding: 1.5rem .2rem;
+    }
+    .top-links{
+        gap: 3px;
+    }
+        .visible {
+            background-color: rgb(50, 64, 86);
+            width: 100%;
+            text-align: center;
+            flex-direction: column;
+            position: absolute;
+            top: 8.5rem;
+            left: 0;
+            padding: .5rem 0;
+        }
+        .menu-btn{
+        display: block;
+    }
+        .visible li {
+            padding: .5rem;
+        }
+        .container {
+            width: 100%;
+        }
+        .container .left {
+            width: 100%;
+            padding: 0 1rem;
+            text-align: center;
+        }
+        .box-contain {
+            flex-wrap: wrap;
+        }
+        .c-2 .box-contain .box {
+            margin: auto;
+            width: 20rem;
+        }
+        .c-3 .box-contain .box {
+            width: 75%;
+            margin: auto;
+        }
+        .mid-nav-sec .sidenav {
+            display: none;
+        }
+    }
+</style>
+<body>
+    <header class="bg-v">
+        <nav class="top-nav flex a-cen j-bet">
+            <div class="logo">
+                <h2 class="col-v">
+                    <span class="col-v" style="font-weight: 200;">
+                        &lt;/&gt;</span>CodeWithGirdhar
+                </h2>
+            </div>
+            <div>
+                <h3 class="btn log-btn menu-btn" onclick="showmenu()" style="color:rgb(233, 228, 238);margin-left: 2px;">
+                    Menu
+                </h3>
+            </div>
+            <div class="flex a-cen gap top-links">
+                <div class="links">
+                    <ul class="flex res" id="links">
+                        <li onclick="navigateTo('home')">Home</li>
+                        <li onclick="navigateTo('courses')">Courses</li>
+                        <li onclick="navigateTo('tutorial')">Tutorial</li>
+                        <li onclick="navigateTo('blog')">Blog</li>
+                        <li onclick="navigateTo('notes')">Notes</li>
+                        <li onclick="navigateTo('contact')">Contact</li>
+                        <li onclick="navigateTo('gear')">My Gear</li>
+                        <li onclick="navigateTo('work')">Work With Us</li>
+                    </ul>
+                </div>
+                <div class="theme res">
+                    <img src="svg/theme.svg" alt="">
+                </div>
+                <div class="btns">
+                    <button class="btn log-btn">
+                        Login
+                    </button>
+                    <button class="btn log-btn res">
+                        Signup
+                    </button>
+                </div>
+            </div>
+        </nav>
+        <hr>
+        <nav class="flex a-cen j-bet mid-nav">
+            <div>
+                <img src="svg/home.svg" alt="">
+            </div>
+            <div>
+                <ul class="flex a-aro res">
+                    <li onclick="navigateTo('HTML')">HTML</li>
+                    <li><a href="">CSS</a></li>
+                    <li><a href="">JS</a></li>
+                    <li><a href="">C</a></li>
+                    <li><a href="">C++</a></li>
+                    <li><a href="">JAVA</a></li>
+                    <li><a href="">PHP</a></li>
+                    <li><a href="">PYTHON</a></li>
+                    <li><a href="">REACT JS</a></li>
+                </ul>
+            </div>
+            <div class="flex a-cen">
+                <input type="search"
+                    style="padding: .5rem;border: none;background-color:rgb(50, 64, 86);margin-right:2px;display:none;position: absolute;right:40px;"
+                    id="search-input" placeholder="Search">
+                <img src="svg/search.svg" alt="" id="search-img">
+            </div>
+        </nav>
+    </header>
+    <!-- top nav secrions  -->
+    <section id="home">
+        <div class="container flex">
+            <div class="left">
+                <h1>
+                    Welcome to
+                </h1>
+                <h1 class="h-col">
+                    CodeWithGirdhar
+                </h1>
+                <h2>
+                    Learn <span class="autotype h-col"></span>
+                </h2>
+                <br>
+                <p>
+                    Confused on which course to take? I have got you covered. Browse courses and find out the best
+                    course for you. Its free! Code With Harry is my attempt to teach basics and those coding techniques
+                    to people in short time which took me ages to learn.
+                </p>
+                <br>
+                <div class="">
+                    <button class="btn-2">
+                        Free Courses
+                    </button>
+                    <button class="btn-2">
+                        Explore Blog
+                    </button>
+                </div>
+            </div>
+            <div class="right res"></div>
+        </div>
+        <div class="container c-2">
+            <div>
+                <h1 class="h-col">
+                    Recommended Courses
+                </h1>
+            </div>
+            <div class="box-contain flex wrap">
+                <div class="box" onclick="navigateTo('PYTHON')">
+                    <img src="https://cwh-full-next-space.fra1.cdn.digitaloceanspaces.com/videoseries/python-100-days-of-code-1/7wnove7K-ZQ-HD.jpg"
+                        alt="">
+                    <div class="box-in">
+                        <h5 class="light">
+                            FREE COURSE
+                        </h5>
+                        <h3>
+                            Python Tutorials - 100 Days of Code
+                        </h3>
+                        <p>
+                            Confused on which course to take? I have got you covered. Browse courses and find out the
+                            best
+                            course for you. Its free! Code With Harry is my attempt to teach basics and those coding
+                            techniques to people in short time which took me ages to learn.
+                        </p>
+                    </div>  
+                    <button class="log-btn btn-3" onclick="navigateTo('PYTHON')">
+                        Start Watching
+                    </button>
+                </div>
+                <div class="box">
+                    <img src="https://cwh-full-next-space.fra1.cdn.digitaloceanspaces.com/videoseries/ultimate-js-tutorial-hindi-1/JS-Thumb.jpg"
+                        alt="">
+                    <div class="box-in">
+                        <h5 class="light">
+                            FREE COURSE
+                        </h5>
+                        <h3>
+                            Ultimate JavaScript Course
+                        </h3>
+                        <p>
+                            This latest JavaScript course comes with premium curriculum that covers everything from
+                            basics to advance. On top of that, you will get my handwritten notes of JS for completely
+                            free. What are you waiting for? Just Enroll Buddy
+                        </p>
+                    </div>
+                    <button class="log-btn btn-3">
+                        Start Watching
+                    </button>
+                </div>
+                <div class="box">
+                    <img src="https://codewithharry.nyc3.cdn.digitaloceanspaces.com/assets/090fefe24d23d47584f6ddc7eb5a241e.png"
+                        alt="">
+                    <div class="box-in">
+                        <h5 class="light">
+                            FREE COURSE
+                        </h5>
+                        <h3>
+                            React JS Tutorials For Beginners
+                        </h3>
+                        <p>
+                            React is a free and open-source front-end JavaScript library. This series will cover React
+                            from starting to the end. We will learn react from the ground up!
+                        </p>
+                    </div>
+                    <button class="log-btn btn-3">
+                        Start Watching
+                    </button>
+                </div>
+            </div>
+            <div>
+            </div>
+        </div>
+        <div class="container c-3">
+            <div>
+                <h1 class="h-col">
+                    Testimonials
+                </h1>
+            </div>
+            <div class="box-contain flex wrap">
+                <div class="box">
+                    <div class="box-in">
+                        <img src="svg/cout.svg" alt="">
+                        <p>
+                            I don't have words to thank this man, I'm really grateful to have this channel and website
+                            in my daily routine. If you're a mere beginner, then you can trust this guy and can put your
+                            time into his content. I can assure you that it'll be worth it.
+                        </p>
+                        <br>
+                        <h4>
+                            Naman Soni
+                        </h4>
+                        <h4 class="light">
+                            Web Developer
+                        </h4>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-in">
+                        <img src="svg/cout.svg" alt="">
+                        <p>
+                            For everyone who wants to level up their #Coding and #Dev skills - seriously, this channel
+                            is for you! Both basic and advanced stacks are covered on this channel, and one can learn
+                            according to his skill levels. And the icing on the cake is, everything is available for
+                            free.
+                        </p>
+                        <br>
+                        <h4>
+                            Umesh Gayakwad
+                        </h4>
+                        <h4 class="light">
+                            Web Developer
+                        </h4>
+                    </div>
+                </div>
+            </div>
+            <div>
+            </div>
+        </div>
+    </section>
+    <section id="courses" class="section">
+        <div class="container c-2">
+            <div>
+                <h1 class="h-col">
+                    Premium Courses
+                </h1>
+            </div>
+            <div class="box-contain flex">
+                <div class="box">
+                    <img src="https://cwh-full-next-space.fra1.cdn.digitaloceanspaces.com/videoseries/python-100-days-of-code-1/7wnove7K-ZQ-HD.jpg"
+                        alt="">
+                    <div class="box-in">
+                        <h5 class="light">
+                            FREE COURSE
+                        </h5>
+                        <h3>
+                            Python Tutorials - 100 Days of Code
+                        </h3>
+                        <p>
+                            Confused on which course to take? I have got you covered. Browse courses and find out the
+                            best
+                            course for you. Its free! Code With Harry is my attempt to teach basics and those coding
+                            techniques to people in short time which took me ages to learn.
+                        </p>
+                    </div>
+                    <button class="log-btn btn-3">
+                        Start Watching
+                    </button>
+                </div>
+                <div class="box">
+                    <img src="https://cwh-full-next-space.fra1.cdn.digitaloceanspaces.com/videoseries/ultimate-js-tutorial-hindi-1/JS-Thumb.jpg"
+                        alt="">
+                    <div class="box-in">
+                        <h5 class="light">
+                            FREE COURSE
+                        </h5>
+                        <h3>
+                            Ultimate JavaScript Course
+                        </h3>
+                        <p>
+                            This latest JavaScript course comes with premium curriculum that covers everything from
+                            basics to advance. On top of that, you will get my handwritten notes of JS for completely
+                            free. What are you waiting for? Just Enroll Buddy
+                        </p>
+                    </div>
+                    <button class="log-btn btn-3">
+                        Start Watching
+                    </button>
+                </div>
+                <div class="box">
+                    <img src="https://codewithharry.nyc3.cdn.digitaloceanspaces.com/assets/090fefe24d23d47584f6ddc7eb5a241e.png"
+                        alt="">
+                    <div class="box-in">
+                        <h5 class="light">
+                            FREE COURSE
+                        </h5>
+                        <h3>
+                            React JS Tutorials For Beginners
+                        </h3>
+                        <p>
+                            React is a free and open-source front-end JavaScript library. This series will cover React
+                            from starting to the end. We will learn react from the ground up!
+                        </p>
+                    </div>
+                    <button class="log-btn btn-3">
+                        Start Watching
+                    </button>
+                </div>
+            </div>
+            <div>
+            </div>
+        </div>
+    </section>
+    <section id="tutorial" class="section">
+        <div class="c-4">
+            <div>
+                <h1 class="h-col">
+                    Tutorials
+                </h1>
+            </div>
+            <div class="box-contain flex">
+                <div class="box">
+                    <img src="https://www.codewithharry.com/img/notes/html.webp" alt="python">
+                    <h3>
+                        HTML Tutorial
+                    </h3>
+                    <button class="log-btn btn-3" onclick="navigateTo('HTML')">
+                        Start Learning!
+                    </button>
+                </div>
+                <div class="box">
+                    <img src="https://www.codewithharry.com/img/notes/python.webp" alt="python">
+                    <h3>
+                        Python Tutorial
+                    </h3>
+                    <button class="log-btn btn-3">
+                        Start Learning!
+                    </button>
+                </div>
+                <div class="box">
+                    <img src="https://www.codewithharry.com/img/notes/python.webp" alt="python">
+                    <h3>
+                        Python Tutorial
+                    </h3>
+                    <button class="log-btn btn-3">
+                        Start Learning!
+                    </button>
+                </div>
+                <div class="box">
+                    <img src="https://www.codewithharry.com/img/notes/python.webp" alt="python">
+                    <h3>
+                        Python Tutorial
+                    </h3>
+                    <button class="log-btn btn-3">
+                        Start Learning!
+                    </button>
+                </div>
+                <div class="box">
+                    <img src="https://www.codewithharry.com/img/notes/python.webp" alt="python">
+                    <h3>
+                        Python Tutorial
+                    </h3>
+                    <button class="log-btn btn-3">
+                        Start Learning!
+                    </button>
+                </div>
+            </div>
+            <div>
+            </div>
+        </div>
+    </section>
+    <!-- mid nav sections  -->
+    <section id="HTML" class="section tutorials">
+        <div class="flex mid-nav-sec ">
+            <div class="sidenav">
+                <div>
+                    <h3 class="light">
+                        INTRODUCTION
+                    </h3>
+                </div>
+                <div class="sub-links">
+                    <ul>
+                        <li>
+                            HTML Introduction
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="main">
+                <div class="flex" style="justify-content: space-between;">
+                    <button class="btn log-btn">
+                        < < Previous </button>
+                            <button class="btn log-btn">Next > ></button>
+                </div>
+                <div class="content">
+                    <h1>HTML Introduction</h1>
+                    <p class="para light">
+                        Today, I'm writing this tutorial to create a resource that will help you learn HTML in less than
+                        30 days. Here's a recommended timeline for learning HTML, based on your educational background:
+                    </p>
+                    <ul style="list-style: circle;">
+                        <li>
+                            High School students and younger: Around 25 days
+                        </li>
+                        <li>
+                            Those beyond High School: Around 20 days
+                        </li>
+                        <li>
+                            College students and above: Around 10-20 days
+                    </ul>
+                    </li>
+                    <p>
+                        You may be wondering why I'm discussing these timelines. It's important for me to set
+                        expectations before you start your journey of learning html with me.
+                        My name is Harry (the same CodeWithHarry guy from YouTube), and today I'm writing this
+                        comprehensive HTML tutorial for all of you. Let's jump right into HTML!
+                    <h1>
+                        What is HTML?
+                    </h1>
+                    <p>
+                        HTML (HyperText Markup Language) was created by Tim Berners-Lee in 1991 as a standard for
+                        creating web pages. It's a markup language used to structure content on the web, defining
+                        elements like headings, paragraphs, links, and images. HTML forms the backbone of web content.
+                        In layman's terms, HTML is like the skeleton of a website. It's a set of instructions that tells
+                        a web browser how to display text, images, videos, and other elements on a webpage. Think of it
+                        as the building blocks that create the structure and look of a website, similar to how bricks
+                        and mortar are used to build a house.
+                    </p>
+                    <h1>
+                        In a nutshell:
+                    </h1>
+                    <ul>
+                        <li>
+                            HTML is the language of the web, used to create websites.
+                        </li>
+                        <li>
+                            HTML defines the barebone structure or layout of web pages that we see on the Internet.
+                        </li>
+                        <li>
+                            HTML consists of a set of tags contained within an HTML document, and the associated files
+                            typically have either a ".html" or ".htm" extension.
+                        </li>
+                        <li>
+                            There are several versions of HTML, with HTML5 being the most recent version.
+                        </li>
+                    </ul>
+                    <h1>
+                        Features of HTML
+                    </h1>
+                    <ul>
+                        <li>
+                            It is platform-independent. For example, Chrome displays the same pages identically across
+                            different operating systems such as Mac, Linux, and Windows.
+                        </li>
+                        <li>
+                            Images, videos, and audio can be added to a web page (For example - YouTube shows videos on
+                            their website)
+                        </li>
+                        <li>
+                            HTML is a markup language and not a programming language.
+                        </li>
+                        <li>
+                            It can be integrated with other languages like CSS, JavaScript, etc. to show interactive (or
+                            dynamic) web pages
+                        </li>
+                    </ul>
+                    <h1>
+                        Why the Term HyperText & Markup Language?
+                    </h1>
+                    <p>
+                        The term 'Hypertext Markup Language' is composed of two main words: 'hypertext' and 'markup
+                        language.' 'Hypertext' refers to the linking of text with other documents, while 'markup
+                        language' denotes a language that utilizes a specific set of tags.
+                        Thus, HTML is the practice of displaying text, graphics, audio, video etc. in a certain way
+                        using special tags.
+                        Note: Tags are meaningful texts enclosed in angle braces, like '<...>'. For example, the '
+                    </p>
+                    <p>
+                        <head>' tag. Each tag has a unique meaning and significance in building an HTML page, and it
+                            can influence the web page in various ways.
+                            Quick Exercise:
+                            Open a webpage of your choice, right-click on the browser, and select 'View Page
+                            Source,' and then you will see the HTML code for that page.
+                    </p>
+                    <video
+                        src="https://cwh-full-next-space.fra1.cdn.digitaloceanspaces.com/tutorial/html-home/view-page-source.mp4"
+                        autoplay controls></video>
+                    <p>
+                        This is the code that the server sent to display the page you're currently viewing. In this
+                        tutorial, we'll learn how to write this type of code using HTML.
+                    </p>
+                    <h1>
+                        A beautiful analogy to understand HTML, CSS, and JavaScript:
+                    </h1>
+                    <img src="https://cwh-full-next-space.fra1.cdn.digitaloceanspaces.com/tutorial/html-home/html-car-example.png"
+                        alt="">
+                    <p>
+                        In building a webpage, think of HTML, CSS, and JavaScript as different parts of a car. HTML is
+                        like the car's skeleton, forming the basic structure and frame. CSS adds the paint and finishing
+                        touches, making the car look appealing with color, style, and design. JavaScript is similar to
+                        the engine and mechanical parts, infusing the car with functionality, movement, and interactive
+                        features. Similarly, when developing a website, HTML lays out the structure, CSS enhances its
+                        visual appeal, and JavaScript provides interactivity and dynamic content
+                    </p>
+                    <h1>
+                        History of HTML:
+                    </h1>
+                    <p>
+                        In 1989, Tim Berners-Lee established the World Wide Web (www), and in 1991, he created the first
+                        version of HTML.
+                        From 1995 to 1997, further work was done to develop and refine different versions of HTML.
+                        In 1999, a committee was organized that standardized HTML 4.0, a version still used by many
+                        today.
+                        The latest and most stable version of HTML is 5, also known as HTML5.
+                        Feel free to read more history of HTML here on the HTML Wikipedia page but I will move ahead and
+                        cover important aspects of HTML.
+                        In the next tutorial, we'll continue our journey and understand how websites work
+                    </p>
+                </div>
+                <div class="flex" style="justify-content: space-between;">
+                    <button class="btn log-btn">
+                        < < Previous </button>
+                            <button class="btn log-btn">Next > ></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="PYTHON" class="section tutorials">
+        <div class="flex mid-nav-sec ">
+           <H2>
+            PYHTON
+           </H2>
+        </div>
+    </section>
+    <footer class="bg-v" width="100%">
+        <div class="top-nav flex a-cen j-bet" style="width:80%; margin: auto;">
+            <div class="flex a-aro a-cen res">
+                <img src="" alt="">
+                <h1>
+                    CodeWithGirdhar
+                </h1>
+            </div>
+            <div>
+                <p class="light" style="text-align: center;">
+                    Copyright © 2024 CodeWithGirdhar.com
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script>
+    document.getElementById('search-img').addEventListener('click', () => {
+        const searchInput = document.getElementById('search-input');
+        // Toggle the display property
+        if (searchInput.style.display === "inline") {
+            searchInput.style.display = "none";
+        } else {
+            searchInput.style.display = "inline";
+        }
+    });
+    var typed = new Typed(".autotype", {
+        strings: ["C++", "Web Devlopment", "Python", "C Programming", "Data Science ", "Java", "DSA"],
+        typeSpeed: 150,
+        backSpeed: 150,
+        loop: true
+    })
+    function navigateTo(id) {
+        document.querySelectorAll('section').forEach(function (section) {
+            section.style.display = "none";
+        });
+        ss = document.getElementById(id).style.display = "block";
+    }
+    function showmenu() {
+        var links = document.getElementById('links');
+        if (links.style.display === 'block') {
+            links.style.display = 'none';
+            links.classList.remove('visible');
+        } else {
+            links.style.display = 'block';
+            links.classList.add('visible');
+        }
+    }
+</script>
